@@ -1,8 +1,9 @@
+import Hero from "./components/home/Hero";
 
 export default function Home() {
   return (
     <main>
-      <h3 className="text-5xl text-center font-bold">hello world....</h3>
+      <Hero></Hero>
     </main>
   );
 }
