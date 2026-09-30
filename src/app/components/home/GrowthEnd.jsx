@@ -22,6 +22,12 @@ export const GrowthEnd = () => {
                 />
             </div>
 
+            <img
+                src="/images/icons/cone8-lime.png"
+                alt=""
+                className="absolute left-[32%] top-[20%] w-32 md:w-48 z-10"
+            />
+
             <div className='relative py-12 z-10 md:w-1/2 flex flex-col gap-6 justify-center'>
                 <h2 className='text-black text-3xl md:text-4xl font-bold'>Create & Manage Courses Easily.</h2>
 

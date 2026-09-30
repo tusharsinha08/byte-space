@@ -51,6 +51,13 @@ export const GrowthStart = () => {
                     className="relative bottom-0 w-full z-10 h-full"
                 />
             </div>
+
+            <img
+                src="/images/icons/cone6-lime.png"
+                alt=""
+                className="absolute right-[10%] top-[20%] w-32 md:w-48 z-10"
+            />
+
         </section>
     )
 }
