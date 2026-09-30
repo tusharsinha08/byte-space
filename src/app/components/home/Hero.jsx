@@ -1,5 +1,15 @@
 import { MdSearch } from "react-icons/md";
 import { Button } from "../ui/Button";
+import InfoCard from "../ui/InfoCard";
+import StudentsCard from "../ui/StudentCard";
+import ProgressCard from "../ui/ProgressCard";
+
+const avatars = [
+    "/images/avatars/1.png",
+    "/images/avatars/2.png",
+    "/images/avatars/3.png",
+    "/images/avatars/4.png",
+];
 
 const Hero = () => {
     return (
@@ -103,10 +113,31 @@ const Hero = () => {
                         alt=""
                         className="relative z-10 w-full"
                     />
-                </div>
 
+                    <InfoCard
+                        title={"UI/UX Design"}
+                        courses={200}
+                        students={3000}
+                        className="absolute z-10 top-[20%] md:left-[-15%] hidden md:block"
+                    ></InfoCard>
+
+                    <StudentsCard
+                        title="Happy Students"
+                        rating={240}
+                        reviews={4.9}
+                        avatars={avatars}
+                        extra={'2k+'}
+                        className="absolute z-10 bottom-[2%] left-[-15%] hidden md:block"
+                    ></StudentsCard>
+
+                    <ProgressCard
+                        label="Learning Progress"
+                        progress={55}
+                        className="absolute z-10 top-[20%] right-[2%] hidden md:block"
+                    ></ProgressCard>
+                </div>
             </div>
-        </section>
+        </section >
     );
 };
 

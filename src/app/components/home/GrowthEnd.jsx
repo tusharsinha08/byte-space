@@ -1,5 +1,15 @@
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
+import StudentsCard from '../ui/StudentCard'
+import RevenueCard from '../ui/RevenueCard';
+import YearToDateCard from '../ui/YearToDateCard';
+
+const avatars = [
+    "/images/avatars/1.png",
+    "/images/avatars/2.png",
+    "/images/avatars/3.png",
+    "/images/avatars/4.png",
+];
 
 export const GrowthEnd = () => {
     return (
@@ -19,6 +29,29 @@ export const GrowthEnd = () => {
                     src="/images/home/female.png"
                     alt=""
                     className="relative bottom-0 w-full z-10 h-full"
+                />
+
+                <StudentsCard
+                    title="Happy Students"
+                    rating={240}
+                    reviews={4.9}
+                    avatars={avatars}
+                    extra={'2k+'}
+                    className="absolute z-10 bottom-[2%] right-[5%]"
+                ></StudentsCard>
+
+                <RevenueCard
+                    period="July 1-28"
+                    amount="$120.29"
+                    progress={60}
+                    className="absolute left-0 top-6 -z-20 w-64 "
+                />
+
+                <YearToDateCard
+                    year="2023"
+                    amount="$1,200.38"
+                    change="+12$"
+                    className="absolute left-0 top-44 -z-20 w-56"
                 />
             </div>
 

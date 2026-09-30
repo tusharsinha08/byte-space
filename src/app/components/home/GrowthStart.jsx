@@ -1,6 +1,7 @@
 import { courses } from '@/data/courses'
 import React from 'react'
 import CourseCard from '../ui/CourseCard'
+import ProgressCard from '../ui/ProgressCard'
 
 export const GrowthStart = () => {
     const highLightCourse = courses.slice(0, 1)
@@ -50,6 +51,12 @@ export const GrowthStart = () => {
                     alt=""
                     className="relative bottom-0 w-full z-10 h-full"
                 />
+
+                <ProgressCard
+                    label="Learning Progress"
+                    progress={55}
+                    className="absolute z-10 top-[40%] right-[2%] hidden md:block"
+                ></ProgressCard>
             </div>
 
             <img
