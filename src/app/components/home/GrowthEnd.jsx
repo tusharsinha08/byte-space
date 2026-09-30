@@ -11,7 +11,7 @@ export const GrowthEnd = () => {
             '
         >
             <div
-                className='pointer-events-none absolute -bottom-10 left-[-10%] z-0 h-[360px] w-[360px] rounded-full bg-lime-400/70 blur-[100px]'
+                className='pointer-events-none absolute -bottom-10 left-[-10%] z-0 h-[360px] w-[360px] rounded-full bg-lime-300/70 blur-[100px]'
             ></div>
 
             <div className="relative z-10 md:w-1/2">

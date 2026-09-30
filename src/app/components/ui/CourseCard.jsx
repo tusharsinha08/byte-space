@@ -80,7 +80,7 @@ export default function CourseCard({
                         />
                     ))}
                     {extraStudents && (
-                        <span className="-ml-4 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-lime-300 text-xs font-bold text-slate-900">
+                        <span className="-ml-4 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#dbfc25] text-xs font-bold text-slate-900">
                             {extraStudents}
                         </span>
                     )}
