@@ -35,7 +35,7 @@ export default function CourseCard({
                         (item, idx) => (
                             <span
                                 key={idx}
-                                className="whitespace-nowrap rounded-full bg-white/30 px-2 py-1 backdrop-blur-sm"
+                                className="whitespace-nowrap rounded-full bg-white/30 px-1 text-xs py-1 backdrop-blur-sm text-black"
                             >
                                 {item}
                             </span>
