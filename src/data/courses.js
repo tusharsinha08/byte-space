@@ -4,7 +4,6 @@ const avatars = [
     "/images/avatars/2.png",
     "/images/avatars/3.png",
     "/images/avatars/4.png",
-    "/images/avatars/5.png",
 ];
 
 export const courses = [
@@ -92,7 +91,7 @@ export const courses = [
         id: 6,
         slug: "python-for-data-science",
         category: "Data Science",
-        image: "/images/courses/data-science.jpg",
+        image: "/images/courses/data_science.jpg",
         title: "Python for Data Science",
         author: "datawave",
         rating: 4.9,

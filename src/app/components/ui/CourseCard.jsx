@@ -24,16 +24,17 @@ export default function CourseCard({
                     <Image
                         src={image}
                         alt={title}
-                        fill
-                        className="object-cover"
+                        width={500}
+                        height={350}
+                        className="h-56 w-full rounded-2xl object-cover"
                     />
                 </Link>
 
                 <div className="absolute inset-x-1 bottom-3 flex items-center justify-between gap-2 text-xs text-white">
                     {[`${lessons} Lessons`, duration, `${comments} Comments`].map(
-                        (item) => (
+                        (item, idx) => (
                             <span
-                                key={item}
+                                key={idx}
                                 className="whitespace-nowrap rounded-full bg-white/30 px-2 py-1 backdrop-blur-sm"
                             >
                                 {item}
@@ -47,7 +48,7 @@ export default function CourseCard({
                 <div>
                     <Link href={`/course/${slug}`}>
                         <h3 className="text-lg font-bold leading-tight text-slate-900">
-                            {title.slice(0, 20)}...
+                            {title?.slice(0, 20)}...
                         </h3>
                     </Link>
                     <p className="mt-1 text-xs text-slate-600">

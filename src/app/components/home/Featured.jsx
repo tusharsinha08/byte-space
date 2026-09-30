@@ -31,9 +31,9 @@ export const Featured = () => {
     const [active, setActive] = useState("Featured")
 
 
-    const filtered = active === "Featured"
-        ? courses
-        : courses.filter((c) => c.category === active).slice(0, 6);
+    const filtered = active === "Featured" ?
+        courses : courses.filter((c) => c.category === active);
+
     const visibleCourses = filtered.slice(0, 6)
 
     return (
