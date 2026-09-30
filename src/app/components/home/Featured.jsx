@@ -4,6 +4,7 @@ import { courses } from "@/data/courses";
 import CourseCard from "../ui/CourseCard";
 import { SectionTitle } from "../ui/SectionTitle"
 import { useState } from "react";
+import Link from "next/link";
 
 export const Featured = () => {
     const categories = [
@@ -52,6 +53,9 @@ export const Featured = () => {
                         > {category} </button>
                     )
                 }
+                <Link
+                    href={"/categories"}
+                    className="text-blue-700 py-2 px-4">+ More</Link>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-12">
