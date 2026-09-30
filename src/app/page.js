@@ -1,8 +1,10 @@
 import { BrandSupport } from "./components/home/BrandSupport";
 import { ExploreMore } from "./components/home/ExploreMore";
 import { Featured } from "./components/home/Featured";
+import { GrowthEnd } from "./components/home/GrowthEnd";
 import { GrowthStart } from "./components/home/GrowthStart";
 import Hero from "./components/home/Hero";
+import { JoinAsCreator } from "./components/home/JoinAsCreator";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <Featured></Featured>
         <ExploreMore></ExploreMore>
         <GrowthStart></GrowthStart>
+        <GrowthEnd></GrowthEnd>
+        <JoinAsCreator></JoinAsCreator>
       </div>
     </main>
   );
