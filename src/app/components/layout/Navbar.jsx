@@ -2,22 +2,40 @@
 
 import Link from "next/link";
 import { MdOutlineShoppingBag, MdMenu, MdClose } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 10);
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    const hasBg = scrolled || menuOpen;
 
     return (
-        <nav className="navbar fixed top-0 left-0 z-50 w-full bg-transparent text-white">
-            <div className="mx-auto w-full lg:px-32 md:px-20 px-4">
+        <nav className="navbar fixed top-0 left-0 z-50 bg-transparent text-white">
+            <div className="w-full max-w-7xl mx-auto lg:px-32 md:px-20 px-4">
 
-                <div className="flex h-20 items-center justify-between">
+                <div className={`flex items-center justify-between px-4 py-2 rounded-full inset-x-0 top-0 z-50 transition-all duration-300 ${hasBg
+                    ? "bg-blue-700/70 shadow-lg backdrop-blur-md"
+                    : "bg-transparent"
+                    }`}
+
+                >
 
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="text-2xl font-extrabold tracking-tight"
+                        className="text-2xl flex items-center gap-1 font-extrabold tracking-tight"
                     >
+                        <img src="logo.png"
+                            className="w-5"
+                            alt="byte space logo" />
                         ByteSpace
                     </Link>
 
@@ -103,9 +121,9 @@ export const Navbar = () => {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`overflow-hidden transition-all duration-300 md:hidden ${menuOpen
-                            ? "max-h-96 opacity-100"
-                            : "max-h-0 opacity-0"
+                    className={`overflow-hidden bg-blue-700/70 rounded-3xl shadow-lg backdrop-blur-md transition-all duration-300 md:hidden ${menuOpen
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
                         }`}
                 >
                     <div className="border-t border-white/10 py-5">
@@ -149,7 +167,7 @@ export const Navbar = () => {
                             <Link
                                 href="/join"
                                 onClick={() => setMenuOpen(false)}
-                                className="btn btn-sm mt-2 border border-white/20 bg-transparent text-white shadow-none hover:bg-white/10"
+                                className="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10 hover:text-white"
                             >
                                 Join Us
                             </Link>

@@ -81,7 +81,7 @@ export default function CourseCard({
             </div>
 
             {/* Price */}
-            <div className="mt-5">
+            <div className="mt-3">
                 <span className="text-xl font-bold text-blue-600">${price}</span>
                 <span className="text-xs text-slate-600">/{priceLabel}</span>
             </div>
