@@ -22,7 +22,7 @@ export const Navbar = () => {
             <div className="w-full max-w-7xl mx-auto lg:px-32 md:px-20 px-4">
 
                 <div className={`flex items-center justify-between px-4 py-2 rounded-full inset-x-0 top-0 z-50 transition-all duration-300 ${hasBg
-                    ? "bg-blue-700/70 shadow-lg backdrop-blur-md"
+                    ? "bg-blue-700/90 shadow-lg backdrop-blur-md"
                     : "bg-transparent"
                     }`}
 
