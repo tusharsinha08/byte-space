@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 export default function CourseCard({
+    slug,
     image,
     title,
     author,
@@ -18,12 +20,14 @@ export default function CourseCard({
     return (
         <div className="w-full max-w-[420px] rounded-2xl border border-slate-300 bg-white p-3">
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
-                <Image
-                    src={image}
-                    alt={title}
-                    fill
-                    className="object-cover"
-                />
+                <Link href={`/course/${slug}`}>
+                    <Image
+                        src={image}
+                        alt={title}
+                        fill
+                        className="object-cover"
+                    />
+                </Link>
 
                 <div className="absolute inset-x-1 bottom-3 flex items-center justify-between gap-2 text-xs text-white">
                     {[`${lessons} Lessons`, duration, `${comments} Comments`].map(
@@ -41,9 +45,11 @@ export default function CourseCard({
 
             <div className="mt-5 flex items-start justify-between gap-3">
                 <div>
-                    <h3 className="text-lg font-bold leading-tight text-slate-900">
-                        {title.slice(0, 20)}...
-                    </h3>
+                    <Link href={`/course/${slug}`}>
+                        <h3 className="text-lg font-bold leading-tight text-slate-900">
+                            {title.slice(0, 20)}...
+                        </h3>
+                    </Link>
                     <p className="mt-1 text-xs text-slate-600">
                         by <span className="text-blue-600">{author}</span>
                     </p>

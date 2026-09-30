@@ -10,6 +10,7 @@ const avatars = [
 export const courses = [
     {
         id: 1,
+        slug: "learn-figma-from-basic",
         category: "UI/UX Design",
         image: "/images/courses/figma.jpg",
         title: "Learn Figma from Basic",
@@ -25,6 +26,7 @@ export const courses = [
     },
     {
         id: 2,
+        slug: "react-js-for-beginners",
         category: "Web Development",
         image: "/images/courses/build_digital.jpg",
         title: "React.js for Beginners",
@@ -40,6 +42,7 @@ export const courses = [
     },
     {
         id: 3,
+        slug: "adobe-photoshop-masterclass",
         category: "Graphic Design",
         image: "/images/courses/balancing.jpg",
         title: "Adobe Photoshop Masterclass",
@@ -55,6 +58,7 @@ export const courses = [
     },
     {
         id: 4,
+        slug: "digital-marketing-essentials",
         category: "Marketing",
         image: "/images/courses/money_management.jpg",
         title: "Digital Marketing Essentials",
@@ -70,10 +74,11 @@ export const courses = [
     },
     {
         id: 5,
+        slug: "portrait-photography-basics",
         category: "Photography",
         image: "/images/courses/balancing.jpg",
         title: "Portrait Photography Basics",
-        author: "lens & light",
+        author: "lens-and-light",
         rating: 4.7,
         lessons: 20,
         duration: "3 hours 20 mins",
@@ -85,6 +90,7 @@ export const courses = [
     },
     {
         id: 6,
+        slug: "python-for-data-science",
         category: "Data Science",
         image: "/images/courses/data-science.jpg",
         title: "Python for Data Science",
@@ -100,6 +106,7 @@ export const courses = [
     },
     {
         id: 7,
+        slug: "2d-animation-with-after-effects",
         category: "Animation",
         image: "/images/courses/animation.jpg",
         title: "2D Animation with After Effects",
@@ -115,6 +122,7 @@ export const courses = [
     },
     {
         id: 8,
+        slug: "digital-illustration-in-procreate",
         category: "Digital Illustration",
         image: "/images/courses/illustration.jpg",
         title: "Digital Illustration in Procreate",
@@ -130,6 +138,7 @@ export const courses = [
     },
     {
         id: 9,
+        slug: "master-notion-and-time-management",
         category: "Productivity",
         image: "/images/courses/productivity.jpg",
         title: "Master Notion & Time Management",
