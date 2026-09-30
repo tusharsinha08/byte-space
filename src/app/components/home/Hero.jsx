@@ -96,7 +96,7 @@ const Hero = () => {
 
                 {/* Bottom Image */}
                 <div className="relative mx-auto mt-auto w-full max-w-lg">
-                    <div className="absolute bottom-0 left-1/2 box-border aspect-[2/1] w-[150%] -translate-x-1/2 rounded-t-full border-[220px] border-b-0 border-lime-400"></div>
+                    <div className="absolute bottom-0 left-1/2 box-border aspect-[2/1] w-[150%] -translate-x-1/2 rounded-t-full border-[220px] border-b-0 border-[#dbfc25]"></div>
 
                     <img
                         src="/images/home/male.png"

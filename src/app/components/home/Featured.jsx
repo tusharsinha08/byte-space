@@ -49,7 +49,7 @@ export const Featured = () => {
                         <button key={i}
                             onClick={() => setActive(category)}
                             className={`rounded-full text-black py-2 px-4  
-                                ${active === category ? 'bg-lime-400' : 'bg-slate-100'}`}
+                                ${active === category ? 'bg-[#dbfc25]' : 'bg-slate-100'}`}
                         > {category} </button>
                     )
                 }
