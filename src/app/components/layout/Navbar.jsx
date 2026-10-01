@@ -76,7 +76,7 @@ export const Navbar = () => {
                         </Link>
 
                         <Link
-                            href="/join"
+                            href="/register"
                             className="text-sm font-medium text-slate-200 transition-colors hover:text-white"
                         >
                             Join Us
