@@ -14,7 +14,7 @@ const avatars = [
 const Hero = () => {
     return (
         <section
-            className="relative max-w-7xl mx-auto min-h-[calc(100vh-80px)] overflow-hidden bg-cover bg-center"
+            className="relative  min-h-[calc(100vh-80px)] overflow-hidden bg-cover bg-center bg-fixed"
             style={{
                 backgroundImage: "url('/images/home/grid_background.png')",
             }}

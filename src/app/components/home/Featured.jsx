@@ -37,7 +37,7 @@ export const Featured = () => {
     const visibleCourses = filtered.slice(0, 6)
 
     return (
-        <section className="mt-12 px-6 md:px-32">
+        <section className="mt-12 px-6 md:px-32 max-w-7xl mx-auto ">
             <SectionTitle
                 title={"Discover Your Passion, Build Your Skills"}
                 subTitle={"At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life."}

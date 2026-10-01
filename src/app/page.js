@@ -10,7 +10,7 @@ import { Reviews } from "./components/home/Reviews";
 export default function Home() {
   return (
     <main>
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         <Hero></Hero>
         <BrandSupport></BrandSupport>
         <Featured></Featured>
