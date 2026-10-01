@@ -9,8 +9,6 @@ export const JoinAsCreator = () => {
       }}
     >
       <div className="max-w-7xl mx-auto md:px-32 ">
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-black/10" />
 
         {/* Images */}
         {/* left 1 */}
@@ -65,7 +63,7 @@ export const JoinAsCreator = () => {
 
 
           <Link
-            href={'/join'}
+            href={'/register'}
             className="self-center rounded-full bg-[#dbfc25] px-6 py-3 text-black transition-colors hover:bg-[#dbfc25]/90"
           >
             Join as Creator
