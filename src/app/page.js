@@ -1,8 +1,25 @@
+import { BrandSupport } from "./components/home/BrandSupport";
+import { ExploreMore } from "./components/home/ExploreMore";
+import { Featured } from "./components/home/Featured";
+import { GrowthEnd } from "./components/home/GrowthEnd";
+import { GrowthStart } from "./components/home/GrowthStart";
+import Hero from "./components/home/Hero";
+import { JoinAsCreator } from "./components/home/JoinAsCreator";
+import { Reviews } from "./components/home/Reviews";
 
 export default function Home() {
   return (
     <main>
-      <h3 className="text-5xl text-center font-bold">hello world....</h3>
+      <div className="max-w-7xl mx-auto">
+        <Hero></Hero>
+        <BrandSupport></BrandSupport>
+        <Featured></Featured>
+        <ExploreMore></ExploreMore>
+        <GrowthStart></GrowthStart>
+        <GrowthEnd></GrowthEnd>
+        <JoinAsCreator></JoinAsCreator>
+        <Reviews></Reviews>
+      </div>
     </main>
   );
 }
